@@ -2,11 +2,11 @@
 
 buildPythonPackage rec {
   pname = "isort";
-  version = "4.3.4";
+  version = "4.3.9";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "1y0yfv56cqyh9wyg7kxxv9y5wmfgcq18n7a49mp7xmzka2bhxi5r";
+    sha256 = "f19b23b22fb5a919a081bc31aabcc0991614c244d9215267e11abf2ca7b684ce";
   };
 
   propagatedBuildInputs = lib.optional isPy27 futures;
